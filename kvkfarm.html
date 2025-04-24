@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KVK Farm Overview - Jalgaon Jamod</title>
+  <link rel="stylesheet" href="kvkfarm.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Farm Overview</h1>
+    <p>Complete overview of land utilization, infrastructure, and farm activities</p>
+  </header>
+
+  <section class="overview">
+    <h2>Farm Location & Area</h2>
+    <p><strong>Location:</strong> Jalgaon Jamod, Buldhana District, Maharashtra</p>
+    <p><strong>Total Area:</strong> 45 acres used for training, demonstrations, seed production, and horticulture development.</p>
+  </section>
+
+  <section class="land-use">
+    <h2>Land Utilization Overview</h2>
+    <canvas id="landUseChart"></canvas>
+  </section>
+
+  <section class="infra">
+    <h2>On-Farm Infrastructure</h2>
+    <ul>
+      <li>Drip & Sprinkler irrigation systems, solar pump units</li>
+      <li>Tractor, power tiller, seed drill, sprayers, cultivators</li>
+      <li>Seed and grain storage godowns, bins</li>
+      <li>Soil & water testing laboratory</li>
+      <li>Polyhouse and shade net facilities for vegetable and flower crops</li>
+    </ul>
+  </section>
+
+  <section class="activities">
+    <h2>Major Farm-Based Activities</h2>
+    <ul>
+      <li>Front Line Demonstrations (FLDs)</li>
+      <li>On-Farm Testing (OFTs)</li>
+      <li>Seed production and certified seed distribution</li>
+      <li>Organic and integrated farming system implementation</li>
+      <li>Farmer Field Schools and practical exposure visits</li>
+      <li>Agroforestry, soil health improvement programs</li>
+    </ul>
+  </section>
+
+  <section class="gallery">
+    <h2>Farm Gallery</h2>
+    <div class="img-grid">
+      <div class="img-item">
+        <img src="Img/fld plot.jpeg" alt="FLD Plots">
+        <p class="caption">FLD Demonstration Plots</p>
+      </div>
+      <div class="img-item">
+        <img src="Img/Orchard.jpeg" alt="Orchard">
+        <p class="caption">Horticulture Orchard</p>
+      </div>
+      <div class="img-item">
+        <img src="Img/Polyhouse.jpeg" alt="Polyhouse">
+        <p class="caption">Polyhouse for Vegetables</p>
+      </div>
+      <div class="img-item">
+        <img src="Img/training.jpeg" alt="Training">
+        <p class="caption">Farmer Training Sessions</p>
+      </div>
+      <div class="img-item">
+        <img src="Img/Nursery.jpeg" alt="Nursery">
+        <p class="caption">Vegetable Nursery Unit</p>
+      </div>
+      <div class="img-item">
+        <img src="Img/Agroforestry.jpeg" alt="Agroforestry">
+        <p class="caption">Agroforestry Plantation</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="pdf-download">
+    <button onclick="window.print()">📄 Download PDF</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 KVK Jalgaon Jamod | Developed for Agriculture Outreach</p>
+  </footer>
+
+  <script>
+    const ctx = document.getElementById('landUseChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: ['Crop Demo (15)', 'Horticulture (8)', 'Seed Production (10)', 'Nursery (3)', 'Agroforestry (9)'],
+        datasets: [{
+          label: 'Land Use (acres)',
+          data: [15, 8, 10, 3, 9],
+          backgroundColor: ['#66bb6a', '#ffa726', '#42a5f5', '#ab47bc', '#8d6e63']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'bottom'
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

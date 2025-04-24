@@ -1,0 +1,603 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+header {
+  background-color: #3f7d20;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  border-bottom: 2px solid white;
+}
+
+.btn {
+  background-color: #3f7d20;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #2e5e14;
+  color: white;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.hero img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Events */
+
+.cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 220px;
+  max-width: 220px;
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 15px;
+  color: #3f7d20;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+}  
+
+/* History*/
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.8;
+  padding: 40px 20px;
+}
+
+/* Main container */
+.info-section {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Block styling for History and Achievements */
+.info-block {
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #e8f5e9; /* Light green background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Achievements specific background */
+.achievements {
+  background-color: #e0f7fa; /* Light blue background */
+}
+
+/* Green header box */
+.info-header {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #2e7d32, #66bb6a);
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Icon */
+.info-header img {
+  width: 36px;
+  height: 36px;
+  margin-right: 15px;
+}
+
+/* Title inside green box */
+.info-header h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Paragraphs */
+.info-block p {
+  font-size: 17px;
+  color: #444;
+  text-align: justify;
+}
+
+.info-header {
+  display: inline-flex; /* Changed from flex to inline-flex */
+  align-items: center;
+  background: linear-gradient(135deg, #2e7d32, #66bb6a);
+  padding: 10px 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  color: white;
+  max-width: 100%; /* Prevent overflow on smaller screens */
+}
+
+/* Experts*/
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.experts-section {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.kvk-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.experts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 0 10px;
+}
+
+.member {
+  background-color: #ecf0f1;
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.member:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.member img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.member p {
+  font-size: 1rem;
+  color: #34495e;
+  margin: 0;
+}
+
+.green-box {
+  background-color: #e6f4ea; /* light green background */
+  border: 3px solid #2e7d32; /* dark green border */
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 1200px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* KVK glance*/
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.glance-section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.explore-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #555;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.info-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  background: #4CAF50;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 25px;
+  transition: background 0.3s ease;
+}
+
+.read-more:hover {
+  background: #45a049;
+}
+
+.green-heading {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 28px;
+  margin: 0;
+  display: inline-block;
+}
+
+/* Counter*/
+
+/* Reset and base styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  background-color: #3f7d20;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links > li {
+  position: relative;
+}
+
+.nav-links a {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #3f7d20;
+  color: #ffffff;
+}
+
+/* Dropdown menu */
+.drop-down {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 220px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border-radius: 0 0 6px 6px;
+  z-index: 1000;
+}
+
+.drop-down li a {
+  padding: 12px 16px;
+  color: black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.drop-down li:last-child a {
+  border-bottom: none;
+}
+
+.nav-link:hover .drop-down {
+  display: block;
+}
+
+/* Optional: add smooth animation */
+.drop-down {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+.nav-link:hover .drop-down {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Navbar Events */
+
+/* Base nav-link styling */
+.nav-link {
+position: relative;
+list-style: none;
+display: inline-block;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-link > a {
+text-decoration: none;
+padding: 12px 20px;
+display: block;
+color: #fff;
+background-color: #3f7d20;
+border-radius: 4px;
+transition: background-color 0.3s ease;
+}
+
+.nav-link > a:hover {
+background-color: #1abc9c;
+}
+
+/* Dropdown menu */
+.drop-down {
+position: absolute;
+top: 100%;
+left: 0;
+background-color: #ffffff;
+border: 1px solid #ddd;
+border-radius: 6px;
+padding: 10px 0;
+display: none;
+min-width: 260px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+z-index: 1000;
+}
+
+.nav-link:hover .drop-down {
+display: block;
+}
+
+/* Dropdown items */
+.drop-down li {
+list-style: none;
+margin: 0;
+}
+
+.drop-down a {
+display: block;
+padding: 12px 18px;
+text-decoration: none;
+color: #333;
+font-size: 15px;
+line-height: 1.4;
+transition: background-color 0.3s ease;
+border-bottom: 1px solid #f0f0f0;
+}
+
+.drop-down a:hover {
+background-color: #f7f7f7;
+color: #1abc9c;
+}
+
+/* Optional: Remove last border */
+.drop-down li:last-child a {
+border-bottom: none;
+}
+
+.nav-links a:hover {
+background-color: #3f7d20;
+color: #ffffff;
+}
+
+footer {
+background: #3f7d20;
+color: white;
+text-align: center;
+padding: 15px;
+margin-top: 40px;
+}
+
+.pdf-download {
+text-align: center;
+padding: 1rem;
+}
+
+.pdf-download button {
+background-color: #3f7d20;
+color: white;
+border: none;
+padding: 0.75rem 1.5rem;
+font-size: 1rem;
+border-radius: 8px;
+cursor: pointer;
+transition: background 0.3s ease;
+}
+
+.pdf-download button:hover {
+background-color: #3f7d20;
+}
+
+/* Container of the whole navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3e821c; /* same green background */
+  padding: 10px 20px;
+}
+
+/* Logo and title wrapper */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo styling */
+.navbar-left img {
+  height: 60px;
+  margin-right: 10px;
+}
+
+/* Title text */
+.navbar-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Navigation links container */
+.navbar-right {
+  display: flex;
+  gap: 30px;
+}
+
+/* Individual nav link */
+.navbar-right a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar-right a:hover {
+  text-decoration: underline;
+}

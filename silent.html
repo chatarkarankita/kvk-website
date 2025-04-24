@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KVK Jalgaon Jamod - Salient Features</title>
+  <link rel="stylesheet" href="silent.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo"> 
+          <img src="Img/Kvk logo.png" alt="KVK Logo"> KVK Buldhana 1
+      </div>
+    <ul class="nav-links">
+      <li class="nav-link">
+        <a href="kvk.html">Home</a>
+      </li>
+      <li class="nav-link">
+        <a href="#about">About</a>
+        <ul class="drop-down">
+          <li><a href="mandates.html">Mandate of KVK</a></li>
+          <li><a href="location.html">Location</a></li>
+          <li><a href="operational.html">Operational area</a></li>
+          <li><a href="silent.html">Silent features of Buldhana District</a></li>
+        </ul>
+      </li>
+      <li class="nav-link">
+        <a href="#activities">Activities</a>
+        <ul class="drop-down">
+          <li><a href="training.html">Training Programs</a></li>
+          <li><a href="front.html">Front Line Demonstration</a></li>
+          <li><a href="on farm.html">On Farm Testing</a></li>
+          <li><a href="extension.html">Extension Activities</a></li>
+        </ul>
+      </li>
+      <li class="nav-link">
+        <a href="#events">Events</a>
+        <ul class="drop-down">
+          <li><a href="event1.html">Agriculture Exhibition SATPUDA AGROTECH-2023</a></li>
+          <li><a href="event2.html">Scientific Advisory Committee Meeting</a></li>
+          <li><a href="event3.html">Visit of ICAR Scientist to KVK</a></li>
+          <li><a href="event4.html">Skill Development Training Under ASCI</a></li>
+          <li><a href="event5.html">Visit of Hon. Dr. Shakir Ali, Principal Scientist, ICAR-ATARI, Pune</a></li>
+          <li><a href="event6.html">Celebration of Agriculture Technology Week</a></li>
+        </ul>
+      </li>
+      <li class="nav-link">
+        <a href="login.html" class="btn">Login</a>
+        
+        
+      </li>
+      
+    </ul>
+  </header>
+    <h1>Salient Features</h1>
+  
+
+  <section class="content">
+    <h2>Highlights</h2>
+    <ul class="features-list">
+      <li><strong>Established in 1994</strong> – Under ICAR, hosted by Satpuda Education Society.</li>
+      <li><strong>Operational Area:</strong> Covers 7 major blocks in Buldhana district.</li>
+      <li><strong>Agro-Ecological Diversity:</strong> AES I, II & III with diverse soil types.</li>
+      <li><strong>Major Crops:</strong> Cotton, Jowar, Soybean, Wheat, Gram, Maize, Sunflower.</li>
+      <li><strong>Horticulture:</strong> Custard Apple, Aonla, Tomato, Brinjal, Chilli.</li>
+      <li><strong>Extension Activities:</strong> FLDs, OFTs, Training for farmers.</li>
+      <li><strong>Climate-Resilient Farming:</strong> Focus on sustainability in rainfed areas.</li>
+      <li><strong>ICT Advisory:</strong> Mobile-based advisories & online training.</li>
+      <li><strong>Model Units:</strong> Demonstrations for crops, livestock, composting.</li>
+      <li><strong>Collaboration:</strong> Works with line departments, FPOs, NGOs.</li>
+    </ul>
+
+    <h2>Visual Overview</h2>
+    <div class="charts">
+      <div class="chart-box">
+        <h3>Agro-Ecological Zone Coverage</h3>
+        <canvas id="aesPieChart"></canvas>
+      </div>
+      <div class="chart-box">
+        <h3>Major Crops Area Coverage (in %)</h3>
+        <canvas id="cropBarChart"></canvas>
+      </div>
+    </div>
+  </section>
+
+  
+  <script>
+    const aesPieCtx = document.getElementById('aesPieChart').getContext('2d');
+    const cropBarCtx = document.getElementById('cropBarChart').getContext('2d');
+
+    new Chart(aesPieCtx, {
+      type: 'pie',
+      data: {
+        labels: ['AES I', 'AES II', 'AES III'],
+        datasets: [{
+          label: 'AES Coverage',
+          data: [40, 35, 25],
+          backgroundColor: ['#0d6efd', '#20c997', '#ffc107']
+        }]
+      },
+      options: {
+        responsive: true
+      }
+    });
+
+    new Chart(cropBarCtx, {
+      type: 'bar',
+      data: {
+        labels: ['Cotton', 'Wheat', 'Soybean', 'Gram', 'Sunflower', 'Maize'],
+        datasets: [{
+          label: 'Crop Coverage %',
+          data: [30, 20, 15, 12, 10, 13],
+          backgroundColor: '#0d6efd'
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: { beginAtZero: true, max: 40 }
+        }
+      }
+    });
+  </script>
+  <div class="pdf-download">
+    <button onclick="window.print()">📄 Download PDF</button>
+  </div>
+  <footer>
+    <p>&copy; 2025 KVK Jalgaon Jamod | Infrastructure Facilities</p>
+  </footer>
+  
+</body>
+</html>
